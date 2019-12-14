@@ -15,3 +15,5 @@ end
 
 gem 'listen'
 
+gem 'twitter-bootstrap-rails'
+
