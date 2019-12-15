@@ -1,4 +1,4 @@
-class AddDeviseToUsers < ActiveRecord::Migration
+class AddDeviseToUsers < ActiveRecord::Migration[5.2]
 
   # Обычная миграция обвёрнута в метод change
   # Девайзовская в методы self.up и self.down

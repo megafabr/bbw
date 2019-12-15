@@ -1,5 +1,11 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update]
+  # Девайзовский фильтр, который посылает незалогинившихся юзеров
+  # Просматривать профили могут и анонимы
+  before_action :authenticate_user!, except: [:show]
+
+  # Задаем объект @user для шаблонов и экшенов
+  before_action :set_current_user, except: [:show]
 
   def show
   end
@@ -16,6 +22,10 @@ class UsersController < ApplicationController
   end
 
   private
+
+  def set_current_user
+    @user = current_user
+  end
 
   def set_user
     @user = User.find(params[:id])
