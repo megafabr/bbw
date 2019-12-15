@@ -19,3 +19,8 @@ gem 'listen'
 
 gem 'twitter-bootstrap-rails'
 
+# На продакшене у нас БД Postgres
+group :production do
+  gem 'pg'
+end
+
