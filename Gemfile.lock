@@ -92,6 +92,7 @@ GEM
     nokogiri (1.10.7)
       mini_portile2 (~> 2.4.0)
     orm_adapter (0.5.0)
+    pg (1.1.4)
     rack (2.0.7)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
@@ -172,6 +173,7 @@ DEPENDENCIES
   devise
   devise-i18n
   listen
+  pg
   rails (~> 5.2.4)
   sass-rails (~> 5.0)
   sqlite3
