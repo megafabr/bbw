@@ -1,17 +1,9 @@
 class AddDeviseToUsers < ActiveRecord::Migration[5.2]
 
-  # Обычная миграция обвёрнута в метод change
-  # Девайзовская в методы self.up и self.down
-  # Эти методы помогают откатить миграцию, если необходимо
   def self.up
 
-    # До этого был хелпер create_table, а теперь
-    # change-table, потому что мы не создаём новую,
-    # а меняем существующую
     change_table :users do |t|
 
-      ## Database authenticatable
-      # Меняется поле email: добавляются новые ограничения
       t.change :email, :string, null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
 
