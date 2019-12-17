@@ -32,3 +32,11 @@ ru:
   app:
     name: 'Давайте общаться!'
     company: 'Юный программист'
+
+  errors:
+    messages:
+      not_saved:
+        error:
+          one: '%{count} ошибка'
+          few: '%{count} ошибки'
+          many: '%{count} ошибок'
