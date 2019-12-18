@@ -44,6 +44,11 @@ class EventsController < ApplicationController
 
   private
 
+  def show
+    @new_comment = @event.comments.build(params[:comment])
+    @new_subscription = @event.subscriptions.build(params[:subscription])
+  end
+
   # Будем искать событие не среди всех,
   # а только у текущего пользователя по id
   def set_current_user_event
