@@ -1,6 +1,9 @@
 class Subscription < ApplicationRecord
   belongs_to :event
   belongs_to :user
+  # Чтобы Рельсы понимали, какой именно класс будет лежать
+  # в модели subscribers, надо указать source
+  has_many :subscribers, through: :subscriptions, source: :user
 
   # Обязательно должно быть событие
   validates :event, presence: true

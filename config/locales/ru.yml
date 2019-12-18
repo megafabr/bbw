@@ -42,9 +42,19 @@ ru:
       not_saved:
         error:
           one: '%{count} ошибка'
+          1:  '%{count} ошибка'
           few: '%{count} ошибки'
           many: '%{count} ошибок'
 
   comments:
     comment:
       destroy_confirm: 'Вы уверены, что хотите удалить этот комментарий?'
+
+  subscriptions:
+    created: 'Вы подписаны на это событие'
+    destroyed: 'Участник отписан'
+    error: 'Подписка/отписка не сработала'
+
+  subscriptions:
+    subscription:
+      destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
