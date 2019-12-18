@@ -1,6 +1,3 @@
-(с) goodprogrammer.ru
-#
-# Контроллер вложенного ресурса комментариев
 class CommentsController < ApplicationController
   # задаем "родительский" event для коммента
   before_action :set_event, only: [:create, :destroy]
@@ -34,6 +31,7 @@ class CommentsController < ApplicationController
   end
 
   private
+
   def set_event
     @event = Event.find(params[:event_id])
   end
