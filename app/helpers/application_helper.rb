@@ -1,6 +1,12 @@
 module ApplicationHelper
+  # Если у пользователя есть собственный аватар, то показываем его,
+  # иначе — стандартную иконку.
   def user_avatar(user)
-    asset_path('user.png')
+    if user.avatar?
+      user.avatar.url
+    else
+      asset_path('user.png')
+    end
   end
 
   def fa_icon(icon_class)

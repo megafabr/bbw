@@ -1,15 +1,21 @@
-<h2>Log in</h2>
+<h2><%= t('.sign_in') %></h2>
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
+<!--  <div class="form-group">-->
+<!--    <div class="col-sm-7">-->
+<!--      <%#= f.text_field :name, class: 'form-control', autofocus: true, placeholder: 'Name' %><br />-->
+<!--    </div>-->
+<!--  </div>-->
+
   <div class="form-group">
-    <div class="col-sm-8">
+    <div class="col-sm-7">
       <%= f.email_field :email, class: "form-control", placeholder: 'Email' %><br />
     </div>
   </div>
 
   <div class="form-group">
-    <div class="col-sm-8">
+    <div class="col-sm-7">
       <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder: 'Password' %><br />
     </div>
   </div>
@@ -25,7 +31,7 @@
 
   <div class="form-group">
     <div class="col-sm-10">
-      <%= f.submit "Log in", class: 'btn btn-primary' %><br />
+      <%= f.submit "Log in", class: 'btn btn-primary' %><br /><br />
       <%= render "devise/shared/links" %>
     </div>
   </div>

@@ -45,6 +45,7 @@
         <h4>Зовет:</h4>
         <p><%= render partial: 'users/user', object: @event.user %></p>
       </div>
+      <% if @event.subscriptions.any? %>
       <div class="event-subscriptions">
         <h4>Пойдут:</h4>
         <div>
@@ -53,6 +54,7 @@
                        collection: @event.subscriptions.except(@new_subscription) %>
           </p>
         </div>
+        <% end %>
       </div>
 
       <% if @event.user != current_user %>

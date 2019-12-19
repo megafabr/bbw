@@ -31,11 +31,28 @@ ru:
       destroyed: 'Комментарий удален'
       created: 'Ваш комментарий добавлен'
       error: 'Ошибка с комментарием'
+    subscriptions:
+      created: 'Вы подписаны на это событие'
+      destroyed: 'Участник отписан'
+      error: 'Подписка/отписка не сработала'
 
   # Перевод названия приложения и компании-разработчика
   app:
     name: 'Давайте общаться!'
     company: 'Юный программист'
+
+  activerecord:
+    attributes:
+      event:
+        title: Название
+        address: Место проведения
+        datetime: Дата и время
+        description: Описание
+      user:
+        name: Имя
+        email: Email
+        password: Пароль
+        password_confirmation: Подтверждение пароля
 
   errors:
     messages:
@@ -51,10 +68,21 @@ ru:
       destroy_confirm: 'Вы уверены, что хотите удалить этот комментарий?'
 
   subscriptions:
-    created: 'Вы подписаны на это событие'
-    destroyed: 'Участник отписан'
-    error: 'Подписка/отписка не сработала'
-
-  subscriptions:
     subscription:
       destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
+
+  devise:
+    registrations:
+      new:
+        sign_up: Регистрация
+
+    sessions:
+      already_signed_out: Выход из системы уже выполнен.
+      new:
+        sign_in: Войти
+
+  user:
+    email: 'Email'
+    name: 'Имя'
+    avatar: 'Аватарка'
+    password: 'Пароль'

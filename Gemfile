@@ -8,6 +8,8 @@ gem 'devise'
 gem 'devise-i18n'
 gem 'rails-i18n'
 
+gem 'carrierwave'
+gem 'rmagick'
 
 gem 'uglifier', '>= 1.3.0'
 
