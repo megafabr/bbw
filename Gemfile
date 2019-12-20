@@ -10,6 +10,8 @@ gem 'rails-i18n'
 
 gem 'jquery-rails'
 
+gem 'fog-aws'
+
 gem 'carrierwave'
 gem 'rmagick'
 
