@@ -13,4 +13,3 @@ if Rails.env.production?
   end
 end
 
-heroku config:set S3_ACCESS_KEY=<ключ>
