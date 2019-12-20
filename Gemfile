@@ -8,7 +8,7 @@ gem 'devise'
 gem 'devise-i18n'
 gem 'rails-i18n'
 
-gem 'jquery'
+gem 'jquery-rails'
 
 gem 'carrierwave'
 gem 'rmagick'
