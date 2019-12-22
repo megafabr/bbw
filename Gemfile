@@ -35,3 +35,6 @@ gem 'twitter-bootstrap-rails'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 
+# Github demand not advise
+gem 'rack', '>= 2.0.8'
+

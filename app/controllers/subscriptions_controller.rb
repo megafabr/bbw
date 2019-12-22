@@ -2,15 +2,16 @@ class SubscriptionsController < ApplicationController
   before_action :set_event, only: [:create, :destroy]
   before_action :set_subscription, only: [:destroy]
 
-
+  #before_action :authorise_user_subscription, only: [:create]
 
   def create
     # Болванка для новой подписки
     @new_subscription = @event.subscriptions.build(subscription_params)
     @new_subscription.user = current_user
 
-    if @new_subscription.save && @new_subscription.user == current_user
+    if @new_subscription.save # && @new_subscription.user == current_user
       # Если сохранилась, редиректим на страницу самого события
+      reject_subscription unless @new_subscription.user == current_user
       redirect_to @event, notice: I18n.t('controllers.subscriptions.created')
     else
       # если ошибки — рендерим шаблон события
@@ -30,6 +31,10 @@ class SubscriptionsController < ApplicationController
   end
 
   private
+
+  #def authorise_user_subscription
+  #  reject_subscription unless @new_subscription.user == current_user
+  #end
 
   def set_subscription
     @subscription = @event.subscriptions.find(params[:id])

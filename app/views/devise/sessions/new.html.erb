@@ -10,13 +10,15 @@
 
   <div class="form-group">
     <div class="col-sm-7">
-      <%= f.email_field :email, class: "form-control", placeholder: 'Email' %><br />
+      <%= f.email_field :email, autofocus: true, autocomplete: 'email', placeholder: 'Email',
+                        class: "form-control" %><br />
     </div>
   </div>
 
   <div class="form-group">
     <div class="col-sm-7">
-      <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder: 'Password' %><br />
+      <%= f.password_field :password, autocomplete: "current-password", autocomplete: "off",
+                           class: "form-control", placeholder: t('activerecord.attributes.user.password') %><br />
     </div>
   </div>
 
