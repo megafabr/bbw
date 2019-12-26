@@ -1,6 +1,20 @@
 ru:
   # Перевод моделей
   activerecord:
+    attributes:
+      photo:
+        photo: 'Фотография'
+      event:
+        title: Название
+        address: Место проведения
+        datetime: Дата и время
+        description: Описание
+      user:
+        name: Имя
+        email: Email
+        password: Пароль
+        password_confirmation: Подтверждение пароля
+        new_password: Новый пароль
     # Перевод названия моделей
     models:
       user: 'Пользователь'
@@ -8,19 +22,6 @@ ru:
       photo: 'Фотография'
 
     # Перевод названий аттрибутов моделей
-    attributes:
-      photo:
-        photo: 'Фотография'
-      user:
-        email: 'Email'
-        name: 'Имя'
-        password: 'Пароль'
-        password_confirmation: 'Подтверждение пароля'
-      event:
-        title: 'Название'
-        address: 'Место проведения'
-        datetime: 'Дата и время'
-        description: 'Описание'
 
   # Перевод сообщений, которые отправляет контроллер
   controllers:
@@ -44,19 +45,6 @@ ru:
     name: 'Давайте общаться!'
     company: 'Юный программист'
 
-  activerecord:
-    attributes:
-      event:
-        title: Название
-        address: Место проведения
-        datetime: Дата и время
-        description: Описание
-      user:
-        name: Имя
-        email: Email
-        password: Пароль
-        password_confirmation: Подтверждение пароля
-        new_password: Новый пароль
 
   errors:
     messages:
@@ -95,3 +83,19 @@ ru:
     error: 'Что-то не так с фоткой'
     created: 'Вы добавили фотографию к событию'
     destroyed: 'Вы удалили фотку'
+
+  event_mailer:
+    comment:
+      title: 'Новый комментарий'
+      author: 'Автор'
+      event: 'Событие'
+      datetime: 'Состоится'
+      owner: 'Организатор'
+    subscription:
+      title: 'Новая подписка'
+      name: 'Имя'
+      email: 'Email'
+      author: 'Автор'
+      event: 'Событие'
+      datetime: 'Состоится'
+      owner: 'Организатор'
