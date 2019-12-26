@@ -56,6 +56,7 @@ ru:
         email: Email
         password: Пароль
         password_confirmation: Подтверждение пароля
+        new_password: Новый пароль
 
   errors:
     messages:
