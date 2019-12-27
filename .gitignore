@@ -33,3 +33,5 @@
 .idea
 
 /public/uploads
+
+credentials.yml.enc
