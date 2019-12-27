@@ -65,7 +65,7 @@ Rails.application.configure do
     address: 'smtp.gmail.com',
     port: '587',
     user_name: 'megafab744@gmail.com', # не используйте для тестов свои реальные ящики
-    password: 'yu11VB90',
+    password: '________',
     authentication: 'plain',
     enable_starttls_auto: true
   }
